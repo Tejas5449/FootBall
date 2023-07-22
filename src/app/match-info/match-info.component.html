@@ -1,0 +1,13 @@
+<div class="matchInfo">
+<h1>{{requiredMatchName}}</h1>
+<h2>{{requiredMatchTime}}</h2>
+</div>
+<div class="select">
+Betslip Selection:<select [(ngModel)]="selectedBetslip">
+  <option *ngFor="let option of betSlipOptions" [value]="option">{{ option }}</option>
+</select>
+Legs:<select [(ngModel)]="selectedOption">
+    <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+  </select>
+</div>  
+  <app-market></app-market>

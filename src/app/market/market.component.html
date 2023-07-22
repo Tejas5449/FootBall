@@ -1,0 +1,14 @@
+<h1>Bet Builder:</h1>
+
+<table id="customers">
+    <tr>
+        <th>Pick</th>
+        <th>Market</th>
+        <th>OutCome</th>
+    </tr>
+    <tr *ngFor="let data of marketData">
+        <td>{{data.MasterMarketId}}</td>
+        <td>{{data.MasterMarketName}}</td>
+        <td>{{data.MarketName}}</td>
+    </tr>
+</table>

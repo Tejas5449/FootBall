@@ -1,0 +1,15 @@
+<table id="customers">
+    <tr>
+        <th>Country</th>
+        <th>League</th>
+        <th>Match</th>
+        <th>Kick off(base on local)</th>
+    </tr> 
+    <tr *ngFor="let data of dataSource | sort:'Country'" (click)="clicked(data.MatchId)"  >
+        <td>{{data.Country }}</td>
+        <td>{{data.LeagueName}}</td>
+        <td>{{data.MatchName}}</td>
+        <td>{{data.KickOffUtc| date:"dd/MM/yyyy hh:mm:ss a":"+0000"}}</td>
+    
+    </tr>
+</table>
